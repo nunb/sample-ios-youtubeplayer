@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  SampleYouTubeVideo
+//
+//  Created by Makoto Kaneko on 2014/10/23.
+//  Copyright (c) 2014年 quiet branch studio. All rights reserved.
+//
+
+#ifndef SampleYouTubeVideo_PrefixHeader_pch
+#define SampleYouTubeVideo_PrefixHeader_pch
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#ifdef DEBUG
+#define LOG(fmt, ...) NSLog((fmt), ##__VA_ARGS__)
+#define LOG2(fmt, ...) NSLog((@"{%s} {%d} " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#define LOG_TRACE() NSLog(@"{%s} {%d}", __PRETTY_FUNCTION__, __LINE__)
+#else
+#define LOG(...)
+#define LOG2(...)
+#define LOG_TRACE()
+#endif
+
+#endif
