@@ -7,23 +7,43 @@
 //
 
 #import "ViewController.h"
+#import "SingleVideoPlayController.h"
 
 @interface ViewController ()
-
-@property (weak, nonatomic) IBOutlet YTPlayerView *playerView;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+}
+
+#pragma mark -
+
+- (IBAction)showYouTubeVideoPlayer:(id)sender
+{
+  [self presentViewController:
+   [SingleVideoPlayController singleVideoPlayControllerWithVideoID:self.videoID
+                                                        playerVars:@{
+                                                                     @"rel" : @0,
+                                                                     @"controls" : @0,
+                                                                     @"playsinline" : @1,
+                                                                     @"autoplay" : @1,
+                                                                     @"autohide" : @1,
+                                                                     @"showinfo" : @0,
+                                                                     @"enablejsapi" : @1,
+                                                                     @"modestbranding" : @1,
+                                                                     }]
+                     animated:YES
+                   completion:nil];
 }
 
 @end

@@ -16,6 +16,8 @@
 #import <Foundation/Foundation.h>
 #endif
 
+#import "Pods-environment.h"
+
 #ifdef DEBUG
 #define LOG(fmt, ...) NSLog((fmt), ##__VA_ARGS__)
 #define LOG2(fmt, ...) NSLog((@"{%s} {%d} " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)

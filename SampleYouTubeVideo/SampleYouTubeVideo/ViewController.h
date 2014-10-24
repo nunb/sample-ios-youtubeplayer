@@ -11,6 +11,7 @@
 
 @interface ViewController : UIViewController
 
+@property (copy, nonatomic) NSString *videoID;
 
 @end
 

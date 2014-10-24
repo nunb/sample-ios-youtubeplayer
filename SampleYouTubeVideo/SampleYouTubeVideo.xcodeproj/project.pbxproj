@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		14D291073CE3C7366D1D9D48 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F9959AA37A4A7DD82B6C7E /* libPods.a */; };
+		6A8862B519FA005000A56BB7 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 6A8862B419FA005000A56BB7 /* YTPlayerView-iframe-player.html */; };
+		6A8862B819FA087400A56BB7 /* YTPlayerViewBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8862B719FA087400A56BB7 /* YTPlayerViewBlocks.m */; };
+		6A8862BE19FA43F900A56BB7 /* SingleVideoPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8862BC19FA43F900A56BB7 /* SingleVideoPlayController.m */; };
+		6A8862BF19FA43F900A56BB7 /* SingleVideoPlayController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A8862BD19FA43F900A56BB7 /* SingleVideoPlayController.xib */; };
+		6A8862C219FA4F1800A56BB7 /* ModalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8862C119FA4F1800A56BB7 /* ModalTransitionAnimator.m */; };
 		CC82587F19F93D500003625D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC82587E19F93D500003625D /* main.m */; };
 		CC82588219F93D500003625D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC82588119F93D500003625D /* AppDelegate.m */; };
 		CC82588519F93D500003625D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC82588419F93D500003625D /* ViewController.m */; };
@@ -29,6 +34,14 @@
 
 /* Begin PBXFileReference section */
 		22F9959AA37A4A7DD82B6C7E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8862B419FA005000A56BB7 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
+		6A8862B619FA087400A56BB7 /* YTPlayerViewBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerViewBlocks.h; sourceTree = "<group>"; };
+		6A8862B719FA087400A56BB7 /* YTPlayerViewBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerViewBlocks.m; sourceTree = "<group>"; };
+		6A8862BB19FA43F900A56BB7 /* SingleVideoPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleVideoPlayController.h; sourceTree = "<group>"; };
+		6A8862BC19FA43F900A56BB7 /* SingleVideoPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleVideoPlayController.m; sourceTree = "<group>"; };
+		6A8862BD19FA43F900A56BB7 /* SingleVideoPlayController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleVideoPlayController.xib; sourceTree = "<group>"; };
+		6A8862C019FA4F1800A56BB7 /* ModalTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTransitionAnimator.h; sourceTree = "<group>"; };
+		6A8862C119FA4F1800A56BB7 /* ModalTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTransitionAnimator.m; sourceTree = "<group>"; };
 		9178035D290FDDFAB0068F21 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C188F35671AED8CF48BE377E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CC82587919F93D500003625D /* SampleYouTubeVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleYouTubeVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +96,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6A8862B319FA005000A56BB7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6A8862B419FA005000A56BB7 /* YTPlayerView-iframe-player.html */,
+			);
+			name = Assets;
+			path = "Pods/youtube-ios-player-helper/Assets";
+			sourceTree = SOURCE_ROOT;
+		};
 		CC82587019F93D4F0003625D = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +128,9 @@
 		CC82587B19F93D500003625D /* SampleYouTubeVideo */ = {
 			isa = PBXGroup;
 			children = (
+				6A8862C019FA4F1800A56BB7 /* ModalTransitionAnimator.h */,
+				6A8862C119FA4F1800A56BB7 /* ModalTransitionAnimator.m */,
+				6A8862B319FA005000A56BB7 /* Assets */,
 				CC82588019F93D500003625D /* AppDelegate.h */,
 				CC82588119F93D500003625D /* AppDelegate.m */,
 				CC82588319F93D500003625D /* ViewController.h */,
@@ -114,6 +139,11 @@
 				CC82588919F93D500003625D /* Images.xcassets */,
 				CC82588B19F93D500003625D /* LaunchScreen.xib */,
 				CC82587C19F93D500003625D /* Supporting Files */,
+				6A8862B619FA087400A56BB7 /* YTPlayerViewBlocks.h */,
+				6A8862B719FA087400A56BB7 /* YTPlayerViewBlocks.m */,
+				6A8862BB19FA43F900A56BB7 /* SingleVideoPlayController.h */,
+				6A8862BC19FA43F900A56BB7 /* SingleVideoPlayController.m */,
+				6A8862BD19FA43F900A56BB7 /* SingleVideoPlayController.xib */,
 			);
 			path = SampleYouTubeVideo;
 			sourceTree = "<group>";
@@ -229,7 +259,9 @@
 			files = (
 				CC82588819F93D500003625D /* Main.storyboard in Resources */,
 				CC82588D19F93D500003625D /* LaunchScreen.xib in Resources */,
+				6A8862B519FA005000A56BB7 /* YTPlayerView-iframe-player.html in Resources */,
 				CC82588A19F93D500003625D /* Images.xcassets in Resources */,
+				6A8862BF19FA43F900A56BB7 /* SingleVideoPlayController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +313,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC82588519F93D500003625D /* ViewController.m in Sources */,
+				6A8862C219FA4F1800A56BB7 /* ModalTransitionAnimator.m in Sources */,
 				CC82588219F93D500003625D /* AppDelegate.m in Sources */,
+				6A8862B819FA087400A56BB7 /* YTPlayerViewBlocks.m in Sources */,
 				CC82587F19F93D500003625D /* main.m in Sources */,
+				6A8862BE19FA43F900A56BB7 /* SingleVideoPlayController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,11 +376,12 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Makoto Kaneko (V3E2EGV45N)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SampleYouTubeVideo/PrefixHeader.pch;
@@ -368,8 +404,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "4932a810-b33f-4564-a079-6968b9b78781";
+				PROVISIONING_PROFILE = "d3b98b4e-2cf6-4780-adbd-f3d3befdd8c0";
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Users/iosdev/Developer/ios/sample-ios-youtubeplayer/SampleYouTubeVideo/Pods/Headers/Public/youtube-ios-player-helper \"/Users/iosdev/Developer/ios/sample-ios-youtubeplayer/SampleYouTubeVideo/Pods/Target Support Files/Pods\"";
 			};
 			name = Debug;
 		};
@@ -390,11 +427,12 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Makoto Kaneko (V3E2EGV45N)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SampleYouTubeVideo/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -410,8 +448,9 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "4932a810-b33f-4564-a079-6968b9b78781";
+				PROVISIONING_PROFILE = "d3b98b4e-2cf6-4780-adbd-f3d3befdd8c0";
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Users/iosdev/Developer/ios/sample-ios-youtubeplayer/SampleYouTubeVideo/Pods/Headers/Public/youtube-ios-player-helper \"/Users/iosdev/Developer/ios/sample-ios-youtubeplayer/SampleYouTubeVideo/Pods/Target Support Files/Pods\"";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
